@@ -1,0 +1,21 @@
+$$
+$$ Usage> windbg.exe -c "$$< custom\Init.txt"
+
+.logappend custom\logs\wdbg.log
+$$ Make commands that support DML (Debugger Markup Language) use it
+.prefer_dml 1
+$$ Show NTSTATUS codes in hex by default
+.enable_long_status 1
+.asm no_code_bytes
+as rr rM 1ab
+!sym noisy
+.symfix d:\symbols
+$$ load some extensions
+.extpath+ custom\exts\x86
+.load pykd.pyd
+.load blwdbgue.dll
+.load psscor4.dll
+.load mex.dll
+$$ Load some command trees
+.cmdtree custom\CmdTree.txt
+

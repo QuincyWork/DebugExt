@@ -1,0 +1,25 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\pta.obj \
+ $(OBJ_PATH)\$O\heap.obj \
+ $(OBJ_PATH)\$O\heap_mscrt.obj \
+ $(OBJ_PATH)\$O\search.obj \
+ $(OBJ_PATH)\$O\segment.obj \
+ $(OBJ_PATH)\$O\windbg_dep.obj \
+ $(OBJ_PATH)\$O\i386-decode.obj \
+ $(OBJ_PATH)\$O\decode.obj \
+ $(OBJ_PATH)\$O\stl_container.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\pta.res
+
+
+
+# lowercased
+BASEDIR=d:\winddk\7600.16385.1
+OBJECT_ROOT=d:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=e:\04.source\06.git\develop\debugext\windbg\exts\codeanalyzer\windbg_ext\pta
+OBJ_PATH=e:\04.source\06.git\develop\debugext\windbg\exts\codeanalyzer\windbg_ext\pta
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0
